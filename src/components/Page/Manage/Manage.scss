@@ -1,0 +1,119 @@
+@import '../styleVariables/variables.scss';
+
+.my-parkings {
+    padding-top: 75px;
+    padding-bottom: 105px;
+    height: 100%;
+
+    .cards-wrapper {
+        width: 80%;
+        max-width: 500px;
+        padding-top: 30px;
+        justify-content: space-between;
+
+    }
+
+    .card {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        color: $base-background;
+        justify-content: start;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-position: 5cm 0cm;
+        min-height: 160px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        opacity: 0.9;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        background: #f0efeb;
+    }
+
+    .plus-icon {
+        cursor: pointer;
+    }
+
+    table {
+        border-radius: 10px;
+        background: #fbfbfb;
+        color: black;
+        display: block;
+        width: 95%;
+        font-size: 22px;
+        box-shadow: $base-shadow;
+
+        tbody {
+            width: 97%;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-content: baseline;
+
+            td {
+                letter-spacing: 1.4px;
+                text-align: center;
+            }
+
+            .address {
+                font-weight: bold;
+                padding-bottom: 0px;
+                padding-top: 5px;
+            }
+
+            .date {
+                margin-top: -5px;
+                padding-top: -5px;
+            }
+
+            .price {
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    .row {
+        background: transparent;
+
+        :first-child {
+            background-color: #fbfbfb;
+            border: 2px solid #fbfbfb;
+        }
+
+        :last-child {
+            border: unset;
+            background-color: #fbfbfb;
+        }
+
+        .plus-icon {
+            color: black;
+
+        }
+
+        .delete-button {
+            color: #a20000;
+        }
+        .waze{
+            display: flex;
+            flex-direction: row;
+            // justify-items: center;
+            // margin-right: 0;
+            background: transparent;
+            button{
+                width: 50px;
+                height: 50px;
+                background: url("../../../assets/img/waze.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: #78ebfad2;
+                border-radius: 10px;
+                border: rgba(0, 0, 0, 0) solid 6px;
+                box-shadow: $base-shadow;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+@import '../styleVariables/variables.scss';
+
+// .map-wrapper {
+// }
+.map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    margin-top: 10px;
+    width: 100%;
+    @media (min-height: 689px){
+        position: absolute;
+        justify-content: end;
+        // background-color: black;
+        height: 100vh;
+        margin-top: -150px;
+        
+    }
+    @media (min-height: 1000px){
+        position: absolute;
+        justify-content: end;
+        // background-color: black;
+        height: 120vh;
+        margin-top: -300px;
+        
+    }
+    // max-width: 100%;
+
+}
+
+.info-box {
+    justify-self: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+
+    .h1-cont {
+        padding-left: 25px;
+        padding-top: 15px;
+        
+        .bingo-button{
+            font-family: 'Dongle', sans-serif;
+            font-weight: bold;
+            // border: 1px black solid;
+            display: flex;
+            box-shadow: #00000026 0px 2px 8px;
+            align-items: center;
+            font-size: 32px;
+            height: 60px;
+            padding: 15px;
+            border-radius: 10%;
+            background-color: $base-yellow;
+            cursor: pointer;
+            &:hover{
+                box-shadow: unset;
+            }
+        }
+    }
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    left:1.5%;
+    margin-top: 73px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.8px;
+    @media (min-width: 500px){
+        left:0;
+        width: 100%;
+    }
+    // border: red solid 1px;
+    input {
+        box-shadow: #00000026 0px 2px 8px;
+        border-radius: 10px;
+        display: flex;
+        font-size: 22px;
+        height: 26px;
+        width: 86.6vw;
+        max-width: 1267px;
+        border: none;
+
+        &:focus {
+            font-size: 22px;
+        }
+        @media (min-height: 689px){
+            height: 30px;
+            justify-content: center;
+            
+        }
+        @media (min-height: 1000px){
+            width: 96vw;
+            
+        }
+        @media (min-height: 1000px){
+            width: 96vw;
+
+            
+        }
+    }
+}
